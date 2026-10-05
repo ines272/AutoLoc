@@ -1,0 +1,15 @@
+package tn.esprit.tic.ssa.autoloc.service;
+
+import tn.esprit.tic.ssa.autoloc.domain.Client;
+
+import java.util.List;
+
+public interface IclientService {
+    List<Client> retrieveAllClients();
+    Client addClient(Client c);
+    Client updateClient(Client c);
+    Client retrieveClient(Long idClient);
+    void removeClient(Long idClient);
+    List<Client> addClients (List<Client> clients);
+
+}
